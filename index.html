@@ -3,90 +3,324 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CloudBridge - B2B SaaS Solutions</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f9fafc;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background: linear-gradient(135deg, #4A90E2, #357ABD);
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        header p {
-            font-size: 1.2em;
-            margin-top: 10px;
-        }
-        section {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-        h2 {
-            color: #357ABD;
-        }
-        .contact {
-            background: #eef3f8;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 40px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #357ABD;
-            color: white;
-            font-size: 0.9em;
-        }
-        a {
-            color: #357ABD;
-            text-decoration: none;
-        }
-    </style>
+    <title>CloudBridge - Emergency Communication Platform for Businesses</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>CloudBridge</h1>
-        <p>Innovative B2B SaaS Solutions for Modern Businesses</p>
-    </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="#home">CloudBridge</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-    <section>
-        <h2>About Us</h2>
-        <p>
-            CloudBridge is a next-generation B2B SaaS platform dedicated to helping enterprises 
-            streamline their operations, enhance productivity, and achieve scalable growth. 
-            We specialize in delivering secure, reliable, and AI-powered solutions for businesses worldwide.
-        </p>
-
-        <h2>Our Services</h2>
-        <ul>
-            <li>Cloud-based automation tools for business process management</li>
-            <li>Secure API integrations and data analytics</li>
-            <li>Real-time communication and collaboration platforms</li>
-            <li>Custom AI-driven solutions for enterprise needs</li>
-        </ul>
-
-        <div class="contact">
-            <h2>Contact Information</h2>
-            <p><strong>Business Name:</strong> CloudBridge</p>
-            <p><strong>Email:</strong> contact@cloudbridge.com</p>
-            <p><strong>Phone:</strong> +1 555 123 4567</p>
-            <p><strong>Address:</strong> 123 Innovation Street, New York, NY, USA</p>
-            <p><strong>Website:</strong> <a href="https://cloudbridge.github.io" target="_blank">cloudbridge.github.io</a></p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Emergency Communication Platform for Modern Businesses
+                </h1>
+                <p class="hero-subtitle">
+                    Keep your employees safe with instant multi-channel notifications during emergencies. 
+                    Real-time tracking, heatmaps, and automated response collection at scale.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#pricing" class="btn btn-primary">Get Started</a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="dashboard-mockup">
+                    <div class="mockup-header">
+                        <div class="mockup-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="mockup-content">
+                        <div class="map-container">
+                            <div class="heatmap-overlay"></div>
+                            <div class="location-pins">
+                                <!-- Safe pins (green) - most common -->
+                                <div class="pin safe" style="top: 25%; left: 20%;"></div>
+                                <div class="pin safe" style="top: 30%; left: 25%;"></div>
+                                <div class="pin safe" style="top: 35%; left: 22%;"></div>
+                                <div class="pin safe" style="top: 28%; left: 28%;"></div>
+                                <div class="pin safe" style="top: 32%; left: 18%;"></div>
+                                <div class="pin safe" style="top: 40%; left: 30%;"></div>
+                                <div class="pin safe" style="top: 45%; left: 15%;"></div>
+                                <div class="pin safe" style="top: 38%; left: 35%;"></div>
+                                <div class="pin safe" style="top: 42%; left: 25%;"></div>
+                                <div class="pin safe" style="top: 50%; left: 20%;"></div>
+                                
+                                <!-- Help pins (yellow) - medium -->
+                                <div class="pin help" style="top: 55%; left: 65%;"></div>
+                                <div class="pin help" style="top: 60%; left: 70%;"></div>
+                                <div class="pin help" style="top: 65%; left: 68%;"></div>
+                                <div class="pin help" style="top: 58%; left: 72%;"></div>
+                                <div class="pin help" style="top: 62%; left: 75%;"></div>
+                                <div class="pin help" style="top: 68%; left: 65%;"></div>
+                                
+                                <!-- Emergency pins (red) - least common -->
+                                <div class="pin emergency" style="top: 45%; left: 50%;"></div>
+                                <div class="pin emergency" style="top: 48%; left: 52%;"></div>
+                                <div class="pin emergency" style="top: 52%; left: 48%;"></div>
+                            </div>
+                        </div>
+                        <div class="stats-panel">
+                            <div class="stat">
+                                <span class="stat-number">1,247</span>
+                                <span class="stat-label">Responses</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">98%</span>
+                                <span class="stat-label">Safe</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">3%</span>
+                                <span class="stat-label">Need Help</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        © 2025 CloudBridge. All rights reserved.
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Powerful Features for Emergency Response</h2>
+                <p>Everything you need to keep your team safe and informed during critical situations</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Multi‑Channel Delivery</h3>
+                    <p>WhatsApp Business Platform, SMS gateways, and Push (FCM & Web Push) with automatic fallback.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <h3>One‑Tap Responses</h3>
+                    <p>"I'm Safe / Need Help / Emergency" buttons. Collect responses instantly and at scale.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Live Map Dashboard</h3>
+                    <p>GPS pinning, heatmaps, clustering, and segment filters by site, department, or region.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Orchestration & Automation</h3>
+                    <p>Prebuilt scenarios, retries, reminders, and rules to trigger additional waves.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics & Reporting</h3>
+                    <p>Real‑time KPIs, response SLAs, export to CSV, and dashboards for leadership.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>KVKK/GDPR‑Ready</h3>
+                    <p>Data minimization, consent flows, data retention policies, and encryption by default.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Simple 4-step process to keep your team safe</p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Define the Scenario</h3>
+                        <p>Earthquake, fire, outage, or drill. Target groups by location or role.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Launch the Broadcast</h3>
+                        <p>Send via WhatsApp + SMS + Push. Automatic SMS fallback if needed.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Track in Real‑Time</h3>
+                        <p>See responses and map status live. Filter by site/department.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Report & Learn</h3>
+                        <p>Export results, measure SLAs, and improve playbooks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pricing</h2>
+                <p>Custom enterprise solutions for large organizations</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="currency">₺</span>
+                            <span class="amount">Custom</span>
+                            <span class="period">Pricing</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited employees</li>
+                        <li><i class="fas fa-check"></i> Multi-channel delivery (WhatsApp + SMS + Push)</li>
+                        <li><i class="fas fa-check"></i> Advanced heatmaps & real-time tracking</li>
+                        <li><i class="fas fa-check"></i> Custom scenarios & automation</li>
+                        <li><i class="fas fa-check"></i> White-label solution</li>
+                        <li><i class="fas fa-check"></i> Dedicated support & custom SLA</li>
+                        <li><i class="fas fa-check"></i> On-premise option available</li>
+                        <li><i class="fas fa-check"></i> API access & custom integrations</li>
+                        <li><i class="fas fa-check"></i> KVKK/GDPR compliance</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Get Custom Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Ready to Get Started?</h2>
+                    <p>Get in touch with our team to discuss your emergency communication needs and get a custom quote.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>kuntindustries@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>24/7 Support Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" action="https://formspree.io/f/myzpvayz" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                            <div class="error-message" id="name-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error-message" id="email-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name *</label>
+                            <input type="text" id="company" name="company" required>
+                            <div class="error-message" id="company-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="employees">Number of Employees *</label>
+                            <select id="employees" name="employees" required>
+                                <option value="">Select range</option>
+                                <option value="1-500">1-500</option>
+                                <option value="501-1000">501-1,000</option>
+                                <option value="1001-5000">1,001-5,000</option>
+                                <option value="5001+">5,001+</option>
+                            </select>
+                            <div class="error-message" id="employees-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your emergency communication needs..." required></textarea>
+                            <div class="error-message" id="message-error"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CloudBridge</h3>
+                
+                    
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CloudBridge. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
